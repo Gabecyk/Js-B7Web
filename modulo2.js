@@ -271,7 +271,7 @@ personagem.olhos[0] = "verde"
 personagem.olhos.push("castanho")
 console.log(personagem.olhos)
 */
-
+/*
 let personagem = 
 {
     nome: "Gabe",
@@ -285,3 +285,170 @@ let personagem =
 
 console.log(personagem.carros[0].modelo)
 console.log(personagem)
+
+const ola = () =>{
+    console.log("Olá")
+    return "Ola2"
+}
+
+console.log(ola());
+*/
+//função em objeto
+
+/*
+let pessoa = {
+    nome: "Gabe",
+    sobrenome: "Jr",
+    idade: 19,
+    nomeCompleto: function(){
+        return `${this.nome} ${this.sobrenome}`;
+    }
+}
+
+console.log(pessoa.nomeCompleto());
+*/
+/*
+let cores = ["branco", "preto", "azul", "verde", "amarelo"]
+cores.push("roxo")
+
+for(let n = 0; n < cores.length; n++) {
+    console.log(cores[n])
+}
+console.log("--------------------")
+*/
+/*
+let cores = [
+    {nome: "preto", qt: 30},
+    {nome: "branco", qt: 12}
+];
+
+for(let i in cores) {
+   cores[i].nome = cores[i].nome.toUpperCase();
+}
+console.log("--------------------")
+
+for(let cor of cores) {
+    console.log(cor.nome)
+}
+console.log("--------------------")
+cores.forEach(element => {
+    console.log(element)
+});
+*/
+
+/*
+let fruit = ["Maça", "Uva", "Banana"];
+
+for(let i = 0; i < fruit.length; i++){
+    console.log(fruit[i])
+}
+
+let n = 1;
+while(n <= 100){
+    console.log(n);
+    n++;
+}
+*/
+
+/*
+let fruits = ["Maça", "Uva", "Laranja", "Banana"];
+
+fruits.shift(); //tira primeiro, o pop tira o ultimo
+
+let a = fruits.join(', ');// vai ficar = Uva, Laranja, Banana
+
+console.log(a)
+*/
+
+/*
+let pessoa = [
+    {nome: "Gabriel", numero: [
+        "2312", "12312"
+    ]},
+    {nome: "Mika"}
+]
+
+console.log(pessoa[0].numero[1]);
+*/
+
+/*
+let fruits = ["Maça", "Uva", "Laranja", "Banana"];
+
+fruits.sort();//em ordem a - z ou 1 - 99.....
+fruits.reverse(); //inverte o array, junto com sort faz junção de ordernar e reverte de z - a
+
+console.log(fruits)
+*/
+//Ordenação de array
+/*
+let cars = [
+    {brand: "Fiat", year:"2022"},
+    {brand: "Ferrari", year: "2020"},
+    {brand: "BMW", year: "2019"}
+]
+*/
+/*
+let c = () => {
+    let a = cars[1];
+    let b = cars[0]
+    cars[0] = a;
+    cars[1] = b
+
+};
+c();
+*/
+/*
+cars.sort((a,b) => {
+    if(a.year > b.year) {
+        return 1
+    } else if (a.year < b.year) {
+        return -1
+    } else {
+        return 0
+    }
+});
+*/
+/*
+cars.sort((a,b) => {
+    return a.year - b.year;
+});
+console.log(cars)
+*/
+
+//Iteração de array
+
+let fruits = ["Maça", "Uva", "Laranja", "Banana"];
+/*
+//com filter
+let bigFruits = fruits.filter((item) => {
+    if(item.length > 4){
+        return true
+    }
+    else
+        return false
+})
+
+let bigFruits2 = fruits.filter((item) => {
+    return item.length > 4;
+})
+
+let fruit2 = [];
+let i = 0;
+while(fruits.length > i){
+    let item = fruits[i];
+    if(item.length > 4)
+        fruit2.push(item)
+    i++;
+}
+
+
+let fruits2 = fruits.every((value) => { //every, todos tem que satisfazer ou seja, ser true e some que tenha pelo o menos 1 true
+    return value.length > 3;
+})
+*/
+
+let a = fruits[0].toLowerCase();
+if(fruits.includes('Uva')) //tipo contains no c#
+    console.log("tem uva")
+
+console.log(fruits)
