@@ -420,7 +420,7 @@ console.log(cars)
 let fruits = ["Maça", "Uva", "Laranja", "Banana"];
 /*
 //com filter
-let bigFruits = fruits.filter((item) => {
+let bigFruits = fruits.filter((item) => { //fez bigFruits receber um array de frutas maiores que 4 caracteres
     if(item.length > 4){
         return true
     }
@@ -442,7 +442,7 @@ while(fruits.length > i){
 }
 
 
-let fruits2 = fruits.every((value) => { //every, todos tem que satisfazer ou seja, ser true e some que tenha pelo o menos 1 true
+let fruits2 = fruits.every((value) => { //(every), todos tem que satisfazer ou seja, ser true e (some) que tenha pelo o menos 1 true
     return value.length > 3;
 })
 */
