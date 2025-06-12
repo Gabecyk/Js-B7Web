@@ -59,16 +59,17 @@ function clicou() {
 }
 */
 
+/*
 function clicou() {
     const teste = document.querySelector("#teste")
     const ul = teste.querySelector("ul")
 
-    /*
+    
     let newButton = document.createElement("button")
     newButton.innerHTML = "Botão"
     ul.after(newButton)//adiciona depois da tag ul
     ul.before(newButton)//coloca antes da tag ul
-    */
+    
    
    let newUl = document.createElement("ul");
    for(let i = 0; i < 5; i++){
@@ -77,5 +78,69 @@ function clicou() {
        newUl.append(newLi)
     }
     ul.after(newUl)
+}
+*/
+/*
+let clicou = () => {
+    const input = document.querySelector(".input")
+    
+    if(input.hasAttribute("placeholder")) 
+    console.log("Tem placeholder")
+    else
+    console.log("Não tem placeholder")
+    
+
+    let btn = document.querySelector(".btn")
+
+    if(input.getAttribute("type") == "password"){
+        input.setAttribute("type", "text")
+        btn.innerHTML = "Esconder senha"
+    }
+    else{
+        input.setAttribute("type", "password")
+        btn.innerHTML = "Mostrar senha"
+    }
+}
+*/
+
+//Manipulando CSS
+/*
+function clicou() {
+    const li = document.querySelector("li");
+
+    li.style.backgroundColor = "green"
     
 }
+*/
+/*
+let s= "string"
+if(s.includes("t"))
+    console.log(1)
+
+function clicou() {
+    const btn = document.querySelector(".btn");
+    //btn.classList.add("verde")
+    //btn.classList.remove("azul")
+
+    
+    if(btn.classList.contains("azul")){
+        btn.classList.remove("azul")
+        btn.classList.add("verde")
+    } else {
+        btn.classList.remove("verde")
+        btn.classList.add("azul")
+    }
+    
+
+    //btn.classList.replace("azul", "verde")//troca azul por verde
+    //btn.classList.toggle("azul")//caso tiver a classe azul ele tira, e se n tiver ele adiciona
+
+    if(btn.classList.contains("azul")){
+        btn.classList.replace("azul", "verde")
+    } else {
+        btn.classList.replace("verde", "azul")
+    }
+
+    console.log(btn.classList)
+}
+*/
