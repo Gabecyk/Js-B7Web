@@ -144,3 +144,62 @@ function clicou() {
     console.log(btn.classList)
 }
 */
+
+/*const input = document.querySelector(".input");
+
+input.addEventListener('mouseenter', () => ola())
+
+function ola(){
+    console.log(1)
+}*/
+
+/*
+const input = document.querySelector(".input");
+
+//input.addEventListener("keydown", apertou) 
+input.addEventListener("keyup", soltou)
+
+function apertou() {
+    console.log("APERTOU")
+}
+
+function segurou () {
+    console.log("SEGUROU")
+}
+
+function soltou (e) {
+    
+    //console.log(e.code , " - ", e.key)
+    console.log("tecla apertada: " + e.code)
+    console.log("shift? " + e.shiftKey)
+    console.log("ctrl? " + e.ctrlKey)
+    console.log("alt? " + e.altKey)
+    console.log("-----")
+}
+*/
+
+//ex lista de tarefas simples
+
+const lista = document.querySelector("#teste ul")
+const input = document.querySelector(".input")
+input.addEventListener("keydown", enter)
+input.addEventListener("input", spanMetodo)
+
+let span = document.querySelector("span")
+
+function enter(e) {
+    if(e.key == "Enter" && input.value.length > 0){
+        let newLi = document.createElement("li");
+        newLi.innerText = input.value;
+        lista.appendChild(newLi)
+
+        input.value = ""
+    } 
+}
+
+function spanMetodo() {
+    if(input.value.length > 0) {
+        span.style.display = "flex"
+    } else
+        span.style.display = "none"
+}
